@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements RecyclerViewadapt
                 List<HeroActivity> HeroList = response.body();
 
                 //Creating an String array for the ListView
-                Toast.makeText(MainActivity.this, "OKK", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "UPDATED", Toast.LENGTH_SHORT).show();
                 adapter = new RecyclerViewadapter(MainActivity.this, HeroList);
                 adapter.setClickListener(MainActivity.this);
                 recyclerView.setAdapter(adapter);
